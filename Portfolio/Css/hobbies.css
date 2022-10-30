@@ -1,0 +1,148 @@
+/*style for the entire page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+/*style for body of the page*/
+body {
+  background-color: #080808;
+}
+/*animation for content of the page*/
+.myDiv {
+  animation: hid 3s;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container header {
+  margin: 89px 0 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    margin: 80px 0 0;
+  }
+}
+/*style for header*/
+.header {
+  font-size: 60px;
+  font-weight: 700px;
+  letter-spacing: 8px;
+  color: black;
+  text-align: center;
+  animation: header 3s;
+  float: none;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  animation: hid 3s;
+}
+
+.nav li {
+  float: left;
+}
+/*style navigation*/
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  animation: hid 3s;
+}
+
+.nav li a:hover {
+  background-color: #111111;
+  animation: hid 3s;
+}
+
+/*slide show styling*/
+.slideShow_container {
+  animation: image 3s;
+  display: block;
+  margin-top: 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.description {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  animation: hid 3s;
+}
+
+.description a {
+  color: rgb(134, 162, 186);
+  animation: hid 3s;
+}
+
+/*hide the slide until header is displayed*/
+@keyframes image {
+  0% {
+    visibility: hidden;
+  }
+  30% {
+    visibility: hidden;
+  }
+  85% {
+    visibility: hidden;
+  }
+}
+
+/*hiding the elemets  until header is displayed*/
+
+@keyframes hid {
+  0% {
+    display: none;
+    color: #000;
+    background-color: #000;
+  }
+  30% {
+    display: none;
+    padding-top: 50px;
+    color: #000;
+    background-color: #000;
+  }
+  85% {
+    display: none;
+    color: #000;
+    background-color: #000;
+  }
+}
+
+/*animation for header*/
+@keyframes header {
+  0% {
+    color: #000;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}

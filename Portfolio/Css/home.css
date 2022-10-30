@@ -1,0 +1,126 @@
+/*style for the entire page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+/*style for body of the page*/
+body {
+  background-color: #080808;
+}
+#home a {
+  color: #fcfbfb;
+}
+
+.wrapper {
+  display: flex;
+  position: fixed;
+}
+/*styling the navigation bar*/
+.wrapper .navigation_bar {
+  width: 200px;
+  height: 100%;
+  background: #323232;
+  padding: 30px 0px;
+  position: fixed;
+}
+/*colors for the nav items*/
+.wrapper .navigation_bar ul li {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Change the link color on hover */
+.wrapper .navigation_bar ul li:hover {
+  background-color: #555;
+}
+/*colors for the nav links*/
+.wrapper .navigation_bar ul li a {
+  display: block;
+  color: #fcfbfb;
+}
+
+#pageHeader {
+  font-size: 22px;
+  color: rgb(247, 244, 244);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  overflow-wrap: break-word;
+  margin-left: 25%;
+  margin-top: 5%;
+  width: 60%;
+}
+
+#header1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
+
+#header2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  color: #b6b5b5;
+}
+
+.fa-solid {
+  width: 25px;
+}
+
+#footer {
+  color: white;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-size: 10px;
+}
+
+#elevatorPitch {
+  font-size: 15px;
+  color: #b9b8b8;
+}
+
+/* Make hamburger button invisible until window resizes */
+.hamburger-button {
+  display: none;
+}
+
+/* Make hamburger menu links invisible until window resizes */
+.hamburger-menu .dropdown {
+  display: none;
+}
+
+/* Set size where menu changes to hamburger button */
+@media screen and (max-width: 700px) {
+  .navigation_list {
+    display: none;
+    background-color: #555;
+    color: #fcfbfb;
+  }
+
+  .navigation_bar {
+    display: none;
+    background-color: #555;
+    color: #fcfbfb;
+  }
+
+  .hamburger-menu .hamburger-button {
+    display: block;
+    background-color: #555;
+    color: #fcfbfb;
+    width: 50px;
+    height: 50px;
+  }
+
+  .hamburger-menu:hover .dropdown {
+    display: block;
+  }
+}
+/*colors for the drop down items*/
+.dropdown_list li a {
+  color: #fcfbfb;
+}
